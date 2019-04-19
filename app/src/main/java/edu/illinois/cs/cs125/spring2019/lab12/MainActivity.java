@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 /**
- * Main class for our UI design lab.
+ * vMain class for our UI design lab.
  */
 public class MainActivity extends AppCompatActivity {
     /**
