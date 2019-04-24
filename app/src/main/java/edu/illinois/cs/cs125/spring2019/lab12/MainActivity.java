@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * .
      */
-    private int num1, num2;
+    private float num1, num2;
     /**
      * .
      * @param savedInstanceState = .
@@ -123,8 +123,12 @@ public class MainActivity extends AppCompatActivity {
                  */
                 num1 = Integer.parseInt(number1.getText().toString());
                 num2 = Integer.parseInt(number2.getText().toString());
-                resultNum = num1 / num2;
-                result.setText(String.valueOf(resultNum));
+                if (num2 == 0) {
+                    result.setText(String.valueOf(0));
+                } else {
+                    resultNum = num1 / num2;
+                    result.setText(String.valueOf(resultNum));
+                }
 
             }
         });
