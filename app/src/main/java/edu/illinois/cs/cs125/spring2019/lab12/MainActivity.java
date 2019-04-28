@@ -225,7 +225,7 @@ public class MainActivity extends AppCompatActivity {
                 acelVal = (float) Math.sqrt((double) (x * x + y * y + z * z));
                 float delta = acelVal - acelLast;
                 shake = shake * 0.9f + delta;
-                if (shake > 12) {
+                if (shake > 21) {
                     resultNum = resultNum * resultNum;
                     result.setText(String.valueOf(resultNum));
                 }
